@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './App.css';
+import DisplayUserName from './components/displayUserName';
+import EditUserName from './components/editUserName';
 
 const App = () => {
   return (
     <div className='App'>
       <header className='App-header'>
-        <p>
-          See <code>Readme.md</code> in the root directory for coding challenge
-          instructions.
-        </p>
-        <p>- ICTBIT Dev Team</p>
+        <DisplayUserName />
+        <EditUserName />
       </header>
     </div>
   );
